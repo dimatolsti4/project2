@@ -1,4 +1,10 @@
-crypted_text = input().replace(' ','').upper()
+crypted_text = input('Введите зашифрованный текст').replace(' ','').upper()
+while crypted_text != string:
+    print('Вы должны ввести строку')
+    crypted_text = input('Введите зашифрованный текст').replace(' ','').upper()
+while crypted_text.isalpha() == false:
+    print('В строке должны быть только буквы')
+    crypted_text = input('Введите зашифрованный текст').replace(' ','').upper()
 binary_code = ''
 uncrypted_text = ''
 letters = 'АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ'
