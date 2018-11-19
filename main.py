@@ -1,7 +1,7 @@
 crypted_text = input().replace(' ','').upper()
 binary_code = ''
 uncrypted_text = ''
-letters = ['А','Б','В','Г','Д','Е','Ж','З','И','Й','К','Л','М','Н','О','П','Р','С','Т','У','Ф','Х','Ц','Ч','Ш','Щ','Ъ','Ы','Ь','Э','Ю','Я']
+letters = 'АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ'
 
 for letter in range (0,len(crypted_text)):
     if (64 < ord(crypted_text[letter]) < 91):
