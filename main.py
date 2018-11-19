@@ -1,7 +1,7 @@
 crypted_text = input('Введите зашифрованный текст').replace(' ','').upper()
 while (crypted_text.isalpha() == 0) or (len(crypted_text) % 5 != 0):
     print('В строке должны быть только буквы')
-    print('Количество символов делится на 5')
+    print('Количество символов должно делится на 5')
     crypted_text = input('Введите зашифрованный текст').replace(' ','').upper()
 binary_code = ''
 uncrypted_text = ''
