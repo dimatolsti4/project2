@@ -1,3 +1,5 @@
+import os
+
 crypted_text = input('Введите зашифрованный текст').replace(' ','').upper()
 while (crypted_text.isalpha() == 0) or (len(crypted_text) % 5 != 0):
     print('В строке должны быть только буквы')
@@ -17,3 +19,4 @@ for letter in range (0,len(crypted_text),5):
     num = int(num,2)
     uncrypted_text = uncrypted_text + letters[num]
 print(uncrypted_text)
+os.system('pause')
